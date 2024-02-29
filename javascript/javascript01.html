@@ -130,7 +130,59 @@
     </div>
 
     <script>
+        //  01. 변수 : 데이터 저장 (var : 옛날꺼)
+        {
+            var x = 100; //변수 x에 숫자 100을 저장
+            var y = 200; //변수 y에 숫자 200을 저장
+            var z = "javascript" //변수 z에 javascript문자열 저장
 
+            // console.log(x);
+            // console.log(y);
+            // console.log(z);
+        }
+
+        // 02. 변수 : 데이터저장 + 데이터변경
+        {
+            let x = 100; //변수 x에 숫자 100저장
+            let y = 200;
+            let z = "jquery";
+
+            x = 300; //변수 x의 값을 숫자 100에서 300으로 변경
+            y = "400"
+            z = 'javascript'
+
+            // console.log(x)
+            // console.log(y)
+            // console.log(z)
+
+        }
+        // 03. 변수 : 데이터 저장 + 데이터 변경 + 데이터 추가
+        {
+            let x = 100;
+            let y = 200;
+            let z = "javascript";
+
+            x += 100;
+            y += "200";
+            z += "~jquery";
+
+            // console.log(x)
+            // console.log(y)
+            // console.log(z)
+        }
+
+        // 04. 상수 : 데이터 저장 + 데이터 변경(X) + 데이터 추가(X)
+        {
+            const x = 100; // 상수 x에 숫자 100을 저장
+            const y = 200; // 상수 y에 숫자 200을 저장
+            const z = "javascript"; // 상수 z에 문자 javascript 저장
+
+            x = 200;
+
+            console.log(x);
+            console.log(y);
+            console.log(z);
+        }
     </script>
 </body>
 
