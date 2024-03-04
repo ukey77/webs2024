@@ -2,11 +2,8 @@
 
 자바스크립트 페이지 만들기
 
-## 자바스크립트 STD
+## Javascript Study
 [1. 데이터저장하기](https://ukey77.github.io/webs2024/javascript/javascript01.html)
 
-## vscode 단축키
-코드 정렬 : shift + alt + F   
-세팅바로가기 : ctrl + ,   
-폴더정렬 : 세팅 > compact folder 해제   
-extension : ESLint   
+## Webd layout
+[1.b-1까지 완성](https://ukey77.github.io/webs2024/webd/layout/layout)
