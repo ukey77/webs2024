@@ -10,9 +10,9 @@
 [1. b-1까지 완성 (0304)](https://ukey77.github.io/webs2024/webd/layout/index.html)
 
 ## layout
-[a1.html](https://ukey77.github.io/webs2024/webd/layout/layout/a1.html)
-[a2.html](https://ukey77.github.io/webs2024/webd/layout/layout/a2.html)
-[a3.html](https://ukey77.github.io/webs2024/webd/layout/layout/a3.html)
-[b1.html](https://ukey77.github.io/webs2024/webd/layout/layout/b1.html)
-[b2.html](https://ukey77.github.io/webs2024/webd/layout/layout/b2.html)
-[b3.html](https://ukey77.github.io/webs2024/webd/layout/layout/b3.html)
+[a1.html](https://ukey77.github.io/webs2024/webd/layout/layout/a1.html)   
+[a2.html](https://ukey77.github.io/webs2024/webd/layout/layout/a2.html)   
+[a3.html](https://ukey77.github.io/webs2024/webd/layout/layout/a3.html)   
+[b1.html](https://ukey77.github.io/webs2024/webd/layout/layout/b1.html)   
+[b2.html](https://ukey77.github.io/webs2024/webd/layout/layout/b2.html)   
+[b3.html](https://ukey77.github.io/webs2024/webd/layout/layout/b3.html)   
