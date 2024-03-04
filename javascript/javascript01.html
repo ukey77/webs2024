@@ -130,59 +130,139 @@
     </div>
 
     <script>
-        //  01. 변수 : 데이터 저장 (var : 옛날꺼)
+        // 01. 변수 : 데이터저장
         {
-            var x = 100; //변수 x에 숫자 100을 저장
-            var y = 200; //변수 y에 숫자 200을 저장
-            var z = "javascript" //변수 z에 javascript문자열 저장
+            let x = 100;
+            let y = 200;
+            let z = "javascript";
 
             // console.log(x);
             // console.log(y);
             // console.log(z);
         }
 
-        // 02. 변수 : 데이터저장 + 데이터변경
+        // 02. 변수 : 데이터 저장 + 데이터 변경
         {
-            let x = 100; //변수 x에 숫자 100저장
+            let x = 100;
             let y = 200;
-            let z = "jquery";
+            let z = "javascript";
 
-            x = 300; //변수 x의 값을 숫자 100에서 300으로 변경
-            y = "400"
-            z = 'javascript'
+            x = 200;
+            y = 300;
+            z = "jQery";
 
-            // console.log(x)
-            // console.log(y)
-            // console.log(z)
+            // console.log(x);
+            // console.log(y);
+            // console.log(z);
 
         }
+
         // 03. 변수 : 데이터 저장 + 데이터 변경 + 데이터 추가
         {
             let x = 100;
             let y = 200;
             let z = "javascript";
 
-            x += 100;
-            y += "200";
-            z += "~jquery";
+            x *= 100; // x = x + 200
+            y -= '100';
+            z += 'jQery';
 
-            // console.log(x)
-            // console.log(y)
-            // console.log(z)
+            // console.log(x);
+            // console.log(y);
+            // console.log(z);
+
         }
 
-        // 04. 상수 : 데이터 저장 + 데이터 변경(X) + 데이터 추가(X)
+        // 04. 상수 : 데이터저장 + 데이터변경 X
         {
-            const x = 100; // 상수 x에 숫자 100을 저장
-            const y = 200; // 상수 y에 숫자 200을 저장
-            const z = "javascript"; // 상수 z에 문자 javascript 저장
+            const x = 100;
+            const y = 200;
+            const z = "javascript";
 
-            x = 200;
+            // console.log(x);
+            // console.log(y);
+            // console.log(z);
 
-            console.log(x);
-            console.log(y);
-            console.log(z);
         }
+
+        // [데이터저장(여러개)]
+        // 05. 표현방법1
+        {
+            const arr = new Array(); // 새로운 배열을 선언
+            arr[0] = 100;
+            arr[1] = 200;
+            arr[2] = 'javascript';
+
+            // console.log(arr);
+            // console.log(arr[0]);
+            // console.log(arr[1]);
+            // console.log(arr[2]);
+        }
+
+        // 06. 표현방법2 : 배열선언과 동시에 초기값 설정
+        {
+            const arr = new Array(100, 200, "javascript",)
+
+
+            // console.log(arr);
+            // console.log(arr[0]);
+            // console.log(arr[1]);
+            // console.log(arr[2]);
+
+        }
+
+        // 07. 표현방법3 : 리터럴 방식으로 배열 선언
+        {
+            const arr = [];
+
+            arr[0] = 100;
+            arr[1] = 200;
+            arr[2] = 'javascript';
+
+            // console.log(arr);
+            // console.log(arr[0]);
+            // console.log(arr[1]);
+            // console.log(arr[2]);
+        }
+
+        // 08. 표현방법4 : 리터럴 방식으로 배열 선언과 동시에 초기값 설정
+        {
+            const arr = [100, 200, 'javascript'];
+
+            // console.log(arr);
+            // console.log(arr[0]);
+            // console.log(arr[1]);
+            // console.log(arr[2]);
+        }
+
+        // 09. 표현방법5 : 2차 배열
+        {
+            const arr = [100, [200, 300], ['javascript', 'jQery']]
+
+            // console.log(arr);
+            // console.log(arr[0]);
+            // console.log(arr[1]);
+            // console.log(arr[1][1]);
+            // console.log(arr[2][0]);
+            // console.log(arr[2][1]);
+
+        }
+
+        // 10. 표현방법6 : 배열 구조 분해 할당
+        {
+            const arr = [100, 200, 'javascript']
+            const [a, b, c] = arr
+
+            console.log(a);
+            console.log(b);
+            console.log(c);
+        }
+
+
+
+
+
+
     </script>
 </body>
 
