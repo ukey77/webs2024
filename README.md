@@ -15,6 +15,12 @@
 [a3.html](https://ukey77.github.io/webs2024/webd/layout/layout/a3.html) /
 [a4.html](https://ukey77.github.io/webs2024/webd/layout/layout/a4.html)
 
-[b1.html](https://ukey77.github.io/webs2024/webd/layout/layout/b1.html)   
-[b2.html](https://ukey77.github.io/webs2024/webd/layout/layout/b2.html)   
-[b3.html](https://ukey77.github.io/webs2024/webd/layout/layout/b3.html)   
+[b1.html](https://ukey77.github.io/webs2024/webd/layout/layout/b1.html) /
+[b2.html](https://ukey77.github.io/webs2024/webd/layout/layout/b2.html) /
+[b3.html](https://ukey77.github.io/webs2024/webd/layout/layout/b3.html) /
+[b4.html](https://ukey77.github.io/webs2024/webd/layout/layout/b4.html)
+
+
+
+<!-- https://ukey77.github.io/webs2024/ -->
+
