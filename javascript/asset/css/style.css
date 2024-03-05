@@ -96,4 +96,5 @@ li {
 #main .main_sample .sample .result summary {
     margin-bottom: 10px;
     cursor: pointer;
+    background-color: rgb(255, 249, 239);
 }
