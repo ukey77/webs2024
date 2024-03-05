@@ -6,10 +6,9 @@
 ## Javascript Study
 [1. 데이터저장하기 (0304)](https://ukey77.github.io/webs2024/javascript/javascript01.html)
 
-## Webd layout
-[1. b-1까지 완성 (0304)](https://ukey77.github.io/webs2024/webd/layout/index.html)
 
-## layout
+## Webd layout
+[All layout](https://ukey77.github.io/webs2024/webd/layout/index.html)   
 [a1.html](https://ukey77.github.io/webs2024/webd/layout/layout/a1.html) /
 [a2.html](https://ukey77.github.io/webs2024/webd/layout/layout/a2.html) /
 [a3.html](https://ukey77.github.io/webs2024/webd/layout/layout/a3.html) /
@@ -24,3 +23,4 @@
 
 <!-- https://ukey77.github.io/webs2024/ -->
 
+webd/layout/layout/a4.html
