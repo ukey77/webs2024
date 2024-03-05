@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+li {
+    list-style: none;
+}
+
+#header {
+    text-align: center;
+    padding: 40px;
+    border-bottom: 1px dashed #dcdcdc;
+}
+
+#header h1 {
+    margin-bottom: 20px;
+}
+
+#header h1 a {
+    font-size: 80px;
+    font-family: "GmarketSans";
+    color: #161366;
+    text-transform: capitalize;
+}
+
+#header nav ul li {
+    display: inline;
+}
+
+#header nav ul li a {
+    display: inline-block;
+    color: #161366;
+    border: 1px solid #161366;
+    padding: 10px 20px;
+    font-family: "nanumSquareNeo";
+}
+
+#header nav ul li.active a {
+    background-color: #161366;
+    color: #fff;
+}
+
+#main {
+    border-bottom: 1px dashed #dcdcdc;
+    padding: 40px;
+}
+
+/* main__menu */
+#main .main__menu {
+    padding-bottom: 40px;
+}
+
+#main .main__menu ul li a {
+    font-family: "nanumSquareNeo";
+    line-height: 1.8;
+    color: #161366;
+}
+
+#main .main__menu ul li a:hover {
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+/* main_sample */
+#main .main_sample {
+    padding: 40px 0;
+    border-top: 1px dashed #dcdcdc;
+}
+
+#main .main_sample .sample {
+    margin-bottom: 100px;
+}
+
+#main .main_sample .sample h3 {
+    font-size: 24px;
+    font-family: "GmarketSans";
+    margin-bottom: 10px;
+}
+
+#main .main_sample .sample p {
+    font-family: "nanumSquareNeo";
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+#main .main_sample .sample .result {
+    font-family: "nanumSquareNeo";
+}
+
+#main .main_sample .sample .result summary {
+    margin-bottom: 10px;
+    cursor: pointer;
+}
