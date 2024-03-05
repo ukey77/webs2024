@@ -1,7 +1,6 @@
 ## 오늘의 클래스
 
-- 자바스크립트 데이터저장하기   
-- webd layout b-1까지 완성
+- 자바스크립트 데이터저장하기 15번  
 
 ## Javascript Study
 [2. 데이터저장하기 (0305) :: 15번까지 완성](https://ukey77.github.io/webs2024/javascript/javascript01.html)
