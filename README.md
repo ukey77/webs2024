@@ -1,6 +1,6 @@
 ## 오늘의 클래스
 
-- 수업 : 자바스크립트 데이터저장하기 15번  
+- 수업 : quizEffet 1
 - 복습 : layout a-4
 
 ## Javascript Study
@@ -17,3 +17,5 @@
 [b2.html](https://ukey77.github.io/webs2024/webd/layout/layout/b2.html) /
 [b3.html](https://ukey77.github.io/webs2024/webd/layout/layout/b3.html) /
 
+## QuizEffet
+[정보처리기능사_Quiz(0306) ](https://ukey77.github.io/webs2024/quiz/quizEffect01.html)
