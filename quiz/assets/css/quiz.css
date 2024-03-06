@@ -1,0 +1,305 @@
+/* font */
+@font-face {
+    font-family: "nanumSquareNeo";
+    font-weight: 300;
+    font-style: normal;
+    src: url("https://cdn.jsdelivr.net/gh/websfont/nanumSquareNeo/nanumSquareNeo-Light.eot");
+    src: url("https://cdn.jsdelivr.net/gh/websfont/nanumSquareNeo/nanumSquareNeo-Light.eot?#iefix") format("embedded-opentype"),
+        url("https://cdn.jsdelivr.net/gh/websfont/nanumSquareNeo/nanumSquareNeo-Light.woff2") format("woff2"),
+        url("https://cdn.jsdelivr.net/gh/websfont/nanumSquareNeo/nanumSquareNeo-Light.woff") format("woff"),
+        url("https://cdn.jsdelivr.net/gh/websfont/nanumSquareNeo/nanumSquareNeo-Light.ttf") format("truetype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "nanumSquareNeo";
+    font-weight: 400;
+    font-style: normal;
+    src: url("https://cdn.jsdelivr.net/gh/websfont/nanumSquareNeo/nanumSquareNeo-Regular.eot");
+    src: url("https://cdn.jsdelivr.net/gh/websfont/nanumSquareNeo/nanumSquareNeo-Regular.eot?#iefix") format("embedded-opentype"),
+        url("https://cdn.jsdelivr.net/gh/websfont/nanumSquareNeo/nanumSquareNeo-Regular.woff2") format("woff2"),
+        url("https://cdn.jsdelivr.net/gh/websfont/nanumSquareNeo/nanumSquareNeo-Regular.woff") format("woff"),
+        url("https://cdn.jsdelivr.net/gh/websfont/nanumSquareNeo/nanumSquareNeo-Regular.ttf") format("truetype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "nanumSquareNeo";
+    font-weight: 700;
+    font-style: normal;
+    src: url("https://cdn.jsdelivr.net/gh/websfont/nanumSquareNeo/nanumSquareNeo-Bold.eot");
+    src: url("https://cdn.jsdelivr.net/gh/websfont/nanumSquareNeo/nanumSquareNeo-Bold.eot?#iefix") format("embedded-opentype"),
+        url("https://cdn.jsdelivr.net/gh/websfont/nanumSquareNeo/nanumSquareNeo-Bold.woff2") format("woff2"),
+        url("https://cdn.jsdelivr.net/gh/websfont/nanumSquareNeo/nanumSquareNeo-Bold.woff") format("woff"),
+        url("https://cdn.jsdelivr.net/gh/websfont/nanumSquareNeo/nanumSquareNeo-Bold.ttf") format("truetype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "nanumSquareNeo";
+    font-weight: 800;
+    font-style: normal;
+    src: url("https://cdn.jsdelivr.net/gh/websfont/nanumSquareNeo/nanumSquareNeo-ExtraBold.eot");
+    src: url("https://cdn.jsdelivr.net/gh/websfont/nanumSquareNeo/nanumSquareNeo-ExtraBold.eot?#iefix") format("embedded-opentype"),
+        url("https://cdn.jsdelivr.net/gh/websfont/nanumSquareNeo/nanumSquareNeo-ExtraBold.woff2") format("woff2"),
+        url("https://cdn.jsdelivr.net/gh/websfont/nanumSquareNeo/nanumSquareNeo-ExtraBold.woff") format("woff"),
+        url("https://cdn.jsdelivr.net/gh/websfont/nanumSquareNeo/nanumSquareNeo-ExtraBold.ttf") format("truetype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "nanumSquareNeo";
+    font-weight: 900;
+    font-style: normal;
+    src: url("https://cdn.jsdelivr.net/gh/websfont/nanumSquareNeo/nanumSquareNeo-Black.eot");
+    src: url("https://cdn.jsdelivr.net/gh/websfont/nanumSquareNeo/nanumSquareNeo-Black.eot?#iefix") format("embedded-opentype"),
+        url("https://cdn.jsdelivr.net/gh/websfont/nanumSquareNeo/nanumSquareNeo-Black.woff2") format("woff2"),
+        url("https://cdn.jsdelivr.net/gh/websfont/nanumSquareNeo/nanumSquareNeo-Black.woff") format("woff"),
+        url("https://cdn.jsdelivr.net/gh/websfont/nanumSquareNeo/nanumSquareNeo-Black.ttf") format("truetype");
+    font-display: swap;
+}
+
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'nanumSquareNeo';
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    display: inline-block;
+}
+
+/* //reset */
+
+body {
+    position: relative;
+    /*por*/
+    width: 100%;
+    height: 100vh;
+    background-image: url('../img/bg01.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+body.bg01 {
+    background-image: url('../img/bg01.jpg');
+}
+
+body.bg02 {
+    background-image: url('../img/bg02.jpg');
+}
+
+body.bg03 {
+    background-image: url('../img/bg03.jpg');
+}
+
+body.bg04 {
+    background-image: url('../img/bg04.jpg');
+}
+
+body.bg05 {
+    background-image: url('../img/bg05.jpg');
+}
+
+body.bg06 {
+    background-image: url('../img/bg06.jpg');
+}
+
+body.bg07 {
+    background-image: url('../img/bg07.jpg');
+}
+
+body.bg08 {
+    background-image: url('../img/bg08.jpg');
+}
+
+
+body::after {
+    content: '';
+    position: absolute;
+    /*poa*/
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+
+/* header */
+#header {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#header h1 {
+    font-size: 30px;
+    padding: 20px;
+}
+
+#header h1 a {
+    font-size: 30px;
+    color: #fff;
+}
+
+/* header > nav */
+#header nav {}
+
+#header nav {
+    margin-right: 20px;
+}
+
+#header nav ul {
+    display: flex;
+}
+
+#header nav ul li {
+    margin: 0 2px;
+}
+
+#header nav ul li.active a {
+    background-color: #fff;
+    color: #000;
+    box-shadow: 0 0 0 #ffffff;
+}
+
+#header nav ul li a {
+    color: #fff;
+    border: 1px solid #fff;
+    width: 35px;
+    height: 35px;
+    padding: 3px;
+    text-align: center;
+    box-shadow: 1px 1px 0 #ffffff;
+    transition: padding 0.3s, box-shadow 0.3s;
+}
+
+#header nav ul li a:hover {
+    box-shadow: 0 0 0 #ffffff;
+}
+
+/* main */
+#main {}
+
+
+/* footer */
+#footer {
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 14px;
+}
+
+#footer a {
+    color: #fff;
+    padding: 20px;
+}
+
+/* quiz__wrap */
+.quiz__wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.quiz__wrap .quiz {
+    width: 500px;
+    min-height: 400px;
+    background-color: #fff;
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* quiz__header */
+.quiz__header {
+    color: #696969;
+    margin-bottom: 20px;
+}
+
+.quiz__header .date {}
+
+.quiz__header .type {}
+
+/* quiz__main */
+.quiz__main {}
+
+.quiz__main .quiz__question {
+    font-size: 24px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.quiz__main .quiz__question em {
+    font-style: normal;
+}
+
+.quiz__main .quiz__input input {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #b6a8ff;
+    border-radius: 3px;
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.quiz__main .quiz__answer {
+    background-color: #f5f2ff;
+    border: 1px solid #e0d9ff;
+    padding: 20px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+    border-radius: 3px;
+    color: #666;
+}
+
+.quiz__main .quiz__answer::before {
+    content: '👌 정답 : ';
+}
+
+.quiz__main .quiz__desc {
+    border: 1px solid #e0d9ff;
+    padding: 20px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+    border-radius: 3px;
+    color: #666;
+}
+
+.quiz__main .quiz__desc::before {
+    content: '😘 설명 : ';
+}
+
+/* quiz__footer */
+.quiz__confirm {
+    background-color: #412E91;
+    color: #fff;
+    width: 100%;
+    padding: 20px;
+    border: 0;
+    font-size: 16px;
+    border-radius: 3px;
+    border: 1.5px dashed transparent;
+    transition: all 0.3s;
+}
+
+.quiz__confirm:hover {
+    background-color: transparent;
+    border: 1.5px dashed #412E91;
+    color: #412E91;
+    cursor: pointer;
+}
