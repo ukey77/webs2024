@@ -1,10 +1,15 @@
 ## 오늘의 클래스
-
 - 수업 : quizEffet 1
 - 복습 : layout a-4
 
 ## Javascript Study
-[2. 데이터저장하기 (0305) :: 15번까지 완성](https://ukey77.github.io/webs2024/javascript/javascript01.html)
+[JS 데이터저장하기 02](https://ukey77.github.io/webs2024/javascript/javascript01.html)
+
+## 😘QuizEffet
+[퀴즈게임01](https://ukey77.github.io/webs2024/quiz/quizEffect01.html)
+* 변수를 이용한 데이터 저장
+* innerText() : 요소 안에 있는 텍스트 내용을 가져오는 메서드
+* querySelector() : HTML 문서 내에서 CSS 선택자를 사용하여 요소를 선택하는 역할
 
 ## Webd layout 
 [All layout](https://ukey77.github.io/webs2024/webd/layout/index.html)
@@ -17,5 +22,3 @@
 [b2.html](https://ukey77.github.io/webs2024/webd/layout/layout/b2.html) /
 [b3.html](https://ukey77.github.io/webs2024/webd/layout/layout/b3.html) /
 
-## QuizEffet
-[정보처리기능사_Quiz(0306) ](https://ukey77.github.io/webs2024/quiz/quizEffect01.html)
