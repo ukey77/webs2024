@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹디자인기능사 레이아웃 B-4</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: #333333;
+        }
+
+        ul,
+        ol,
+        li {
+            list-style: none;
+        }
+
+        a {
+            display: block;
+            text-decoration: none;
+            color: #333333;
+        }
+
+        #wrap {
+            width: 100%;
+        }
+
+        /* header */
+        #header {
+            width: 100%;
+            height: 100px;
+            background-color: #dadada;
+        }
+
+        #header .logo {
+            width: 20%;
+            height: 100px;
+            background-color: #efefef;
+        }
+
+        #header .nav {
+            width: 80%;
+            height: 100px;
+            background-color: #bbbbbb;
+        }
+
+        /* slider */
+        #slider {
+            width: 100%;
+            height: 300px;
+        }
+
+        /* contents */
+        #contents {
+            width: 100%;
+        }
+
+        #contents .notice {
+            width: 33.3333%;
+            height: 200px;
+            background-color: #bdbdbd;
+        }
+
+        #contents .gallery {
+            width: 33.3333%;
+            height: 200px;
+            background-color: #8a8a8a;
+        }
+
+        #contents .banner {
+            width: 33.3333%;
+            height: 200px;
+            background-color: #949494;
+        }
+
+        /* footer */
+        #footer {
+            width: 100%;
+            height: 100px;
+            background-color: #969696;
+        }
+
+        .footer1 {
+            width: 80%;
+        }
+
+        .footer1-1 {
+            width: 100%;
+            height: 50px;
+            background-color: #ddd;
+        }
+
+        .footer1-2 {
+            width: 100%;
+            height: 50px;
+            background-color: #b9b9b9;
+        }
+
+        .footer2 {
+            width: 20%;
+            height: 100px;
+            background-color: #b9b9b9;
+        }
+
+        .container {
+            width: 1200px;
+            height: inherit;
+            margin: 0 auto;
+            display: flex;
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="container">
+                <h1 class="logo"></h1>
+                <nav class="nav"></nav>
+            </div>
+
+        </header>
+        <!-- //header -->
+        <article id="slider">
+            <div class="container">
+
+            </div>
+
+        </article>
+        <!-- //article -->
+        <main id="contents">
+            <div class="container">
+                <section class="notice"></section>
+                <section class="gallery"></section>
+                <section class="banner"></section>
+            </div>
+
+        </main>
+        <!-- //contents -->
+        <footer id="footer">
+            <div class="container">
+                <div class="footer1">
+                    <div class="footer1-1"></div>
+                    <div class="footer1-2"></div>
+                </div>
+                <div class="footer2"></div>
+            </div>
+        </footer>
+        <!-- //footer -->
+    </div>
+</body>
+
+</html>
