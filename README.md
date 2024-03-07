@@ -11,4 +11,4 @@
 * querySelector() : HTML내 CSS 선택자를 사용하여 요소 선택
 
 ## Webd layout 
-[All layout](https://ukey77.github.io/webs2024/webd/index.html)
+[All layout](https://ukey77.github.io/webs2024/webd/layout/index.html)
