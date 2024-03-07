@@ -98,3 +98,10 @@ li {
     cursor: pointer;
     background-color: rgb(255, 249, 239);
 }
+
+
+#main .main_sample .sample .operator {
+    background-color: #fcfcfc;
+    font-size: 16px;
+    font-weight: bold;
+}
