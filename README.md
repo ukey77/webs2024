@@ -1,6 +1,5 @@
 ## 오늘의 클래스
-- 수업 : quizEffet 1
-- 복습 : layout a-4
+- 수업 : quizEffect 2
 
 ## Javascript Study
 [JS 데이터저장하기 02](https://ukey77.github.io/webs2024/javascript/javascript01.html)
