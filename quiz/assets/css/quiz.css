@@ -138,6 +138,11 @@ body::after {
     z-index: -1;
 }
 
+/* 공통요소 */
+.none {
+    display: none !important;
+}
+
 /* header */
 #header {
     color: #fff;
@@ -218,7 +223,7 @@ body::after {
 
 .quiz__wrap .quiz {
     width: 500px;
-    min-height: 400px;
+    min-height: 200px;
     background-color: #fff;
     padding: 40px 30px;
     border-radius: 10px;

@@ -40,8 +40,8 @@
                     <div class="quiz__input">
                         <input type="text" placeholder="정답을 입력해주세요!">
                     </div>
-                    <div class="quiz__answer"></div>
-                    <div class="quiz__desc"></div>
+                    <div class="quiz__answer none"></div>
+                    <div class="quiz__desc none"></div>
                 </div>
                 <div class="quiz__footer">
                     <button class="quiz__confirm">정답 확인하기</button>
@@ -68,22 +68,39 @@
         const infoAnswer = "MIPS";
         const infoDesc = "LIPS는 초당 1개, KIPS는 초당 1000개, MIPS는 초당 1000000의 연산을 수행하는 것을 의미합니다.";
 
+
         // 선택자
-        const quizDate = document.querySelector(".quiz__header .date")
-        const quizType = document.querySelector(".quiz__header .type")
-        const quizNum = document.querySelector(".quiz__question em")
-        const quizQuestion = document.querySelector(".quiz__question span")
-        const quizAnswer = document.querySelector(".quiz__main .quiz__answer")
-        const quizDesc = document.querySelector(".quiz__main .quiz__desc")
+        const quizDate = document.querySelector(".quiz__header .date");
+        const quizType = document.querySelector(".quiz__header .type");
+        const quizNum = document.querySelector(".quiz__question em");
+        const quizQuestion = document.querySelector(".quiz__question span");
+        const quizAnswer = document.querySelector(".quiz__main .quiz__answer");
+        const quizDesc = document.querySelector(".quiz__main .quiz__desc");
+        const quizConfirm = document.querySelector(".quiz__confirm");
+        const quizInput = document.querySelector(".quiz__input input")
+
 
         // 문제 출력
-        quizDate.innerText = infoDate
-        quizType.innerText = infoType
-        quizNum.innerText = infoNum
-        quizQuestion.innerText = infoQuestion
-        quizAnswer.innerText = infoAnswer
-        quizDesc.innerText = infoDesc
+        quizDate.innerText = infoDate;
+        quizType.innerText = infoType;
+        quizNum.innerText = infoNum;
+        quizQuestion.innerText = infoQuestion;
+        quizAnswer.innerText = infoAnswer;
+        quizDesc.innerText = infoDesc;
 
+
+        // 정답 확인하기
+        quizConfirm.addEventListener("click", () => {
+            const userAnswer = quizInput.value; //사용자가 쓴 정답
+
+            if (infoAnswer == userAnswer) {
+                // 정답을 맞춘경우
+                alert('정답입니다');
+            } else {
+                // 정답을 틀린경우
+                alert('오답입니다');
+            };
+        });
 
 
 
