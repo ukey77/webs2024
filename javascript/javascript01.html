@@ -748,6 +748,36 @@
 }</code></pre>
                         </div>
                     </details>
+                    <details class="operator 04">
+                        <summary>4. 비교 연산자 (Comparison Operators)</summary>
+                        <div>
+                            <p>- 두 개의 값을 비교하고, 그 결과를 불리언 값으로 반환합니다. 주로 조건문이나 반복문에서 사용됩니다. <br />
+                                • == : 동등 연산자 (값 비교)<br />
+                                • === : 엄격한 동등 연산자 (값, Type 비교)<br />
+                                • != : 부등 연산자 <br />
+                                • !== : 엄격한 부등 연산자 (값, Type 비교)<br />
+                                <br />
+                                [관계연산자]<br />
+                                <: 작은지를 비교합니다. <br />
+                                >: 큰지를 비교합니다.<br />
+                                <=: 작거나 같은지를 비교합니다.<br />
+                                >=: 크거나 같은지를 비교합니다.<br />
+                            </p>
+                            <pre><code class="language-js">{
+        let a = 5; // 변수 a에 5 할당
+        let b = "5"; // 변수 b에 문자열 "5" 할당
+
+        console.log(a == b); // true (형 변환 후 값이 같으므로)
+        console.log(a === b); // false (타입이 다르므로)
+        console.log(a != b); // false (형 변환 후 값이 같으므로)
+        console.log(a !== b); // true (타입이 다르므로)
+        console.log(a > b); // false (숫자와 문자열 비교 시, 문자열을 숫자로 변환하여 비교하므로)
+        console.log(a < b); // false (숫자와 문자열 비교 시, 문자열을 숫자로 변환하여 비교하므로)
+        console.log(a >= b); // true (숫자와 문자열 비교 시, 문자열을 숫자로 변환하여 비교하므로)
+        console.log(a <= b); // true (숫자와 문자열 비교 시, 문자열을 숫자로 변환하여 비교하므로)
+}</code></pre>
+                        </div>
+                    </details>
                 </div>
 
             </div>
