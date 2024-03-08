@@ -102,6 +102,7 @@ li {
 
 #main .main_sample .sample .operator {
     background-color: #fcfcfc;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
+    line-height: 1.8;
 }
