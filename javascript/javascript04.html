@@ -42,11 +42,317 @@
                     <li><a href="#">07. do while문</a></li>
                     <li><a href="#">08. for문</a></li>
                     <li><a href="#">09. break문</a></li>
-                    <li><a href="#">10. continue</a></li>
+                    <li><a href="#">10. continue문</a></li>
                 </ul>
             </div>
             <!--//main__menu -->
+            <div class="main_sample">
+                <div id="sample01" class="sample">
+                    <h3>01. if문</h3>
+                    <p>조건문(if statement)은 프로그래밍에서 특정 조건이 참(true)인 경우에만 특정 코드 블록을 실행하는 데 사용됩니다.
+                    </p>
+                    <pre><code class="language-js">{
+        if (true) {
+            document.write("실행되었습니다. (true)");
+        } else {
+            document.write("실행되었습니다. (false)")
+        }
+} </code></pre>
+                    <p class="desc">
+                        [true로 평가되는 값] <br />
+                        1. true: 불리언(true) 값으로, 직접적으로 참을 나타냄 <br />
+                        2. "문자열": 비어있지 않은 문자열은 항상 true로 평가 <br />
+                        3. 1: 숫자 1은 true로 평가 <br />
+                        <br />
+                        [false로 평가되는 값]<br />
+                        1. false: 불리언(false) 값으로, 직접적으로 거짓을 나타냄<br />
+                        2. 0: 숫자 0은 false로 평가<br />
+                        3. null: null은 명시적으로 '값이 없음'을 나타내며, false로 평가.<br />
+                        4. undefined: 변수에 값이 할당되지 않았을 때의 상태를 나타내며, false로 평가<br />
+                        5. "" (빈 문자열): 비어있는 문자열은 false로 평가<br />
+                    </p>
+                </div>
+                <div id="sample02" class="sample">
+                    <h3>02. 다중 if문</h3>
+                    <p>여러 개의 조건을 검사하여 각각에 맞는 코드 블록을 실행합니다.<br />
+                        각 if문은 순차적으로 평가되며, 조건이 참일 때 해당하는 코드 블록이 실행됩니다.<br />
+                    </p>
+                    <pre><code class="language-js">{
+        const num = 100;
 
+        if (num == 90) {
+            document.write("실행되었습니다. (num = 90)");
+        } else if (num == 95) {
+            document.write("실행되었습니다. (num = 95)");
+        } else if (num == 100) {
+            document.write("실행되었습니다. (num = 100)");
+        } else if (num == 105) {
+            document.write("실행되었습니다. (num = 105)");
+        };
+} </code></pre>
+                    <p class="desc">
+
+                    </p>
+                    <div class="result">
+                        <details>
+                            <summary>결과 확인하기</summary>
+                            <div>
+                                실행되었습니다. (num = 105)
+                            </div>
+                        </details>
+                    </div>
+                </div>
+                <div id="sample03" class="sample">
+                    <h3>03. 중첩 if문</h3>
+                    <p> 중첩된 if문은 하나의 if문 안에 또 다른 if문이 포함되어 있는 구조입니다. <br />
+                        내부의 if문은 외부의 if문의 조건이 참일 때만 실행됩니다.<br />
+                        특정 조건이 만족되었을 때 추가적인 조건을 검사하고자 할 때 유용하게 사용됩니다. <br />
+                    </p>
+                    <pre><code class="language-js">{
+        const num = 100;
+
+        if (num == 100) {
+            document.write("실행되었습니다. 1");
+            if (num === 100) {
+                document.write("실행되었습니다. 2");
+            } if (num === 100) {
+                document.write("실행되었습니다. 3")
+            }
+        } else {
+            document.write("실행되었습니다.")
+        }
+} </code></pre>
+                    <p class="desc">
+                        *주의해야 할 점은 중첩된 if문의 조건은 외부의 if문의 조건이 참인 경우에만 검사됩니다.<br />
+                        따라서 외부 if문의 조건이 거짓이면 내부 if문은 검사조차 되지 않습니다.<br />
+                    </p>
+                    <div class="result">
+                        <details>
+                            <summary>결과 확인하기</summary>
+                            <div>
+                                실행되었습니다. 1실행되었습니다. 2실행되었습니다. 3
+                            </div>
+                        </details>
+                    </div>
+                </div>
+                <div id="sample04" class="sample">
+                    <h3>04. if문 생략 & 삼항 연산자</h3>
+                    <p>1. if문 생략 (한 줄 if문) <br />
+                        - if문의 실행문이 하나뿐이기 때문에 중괄호를 생략할 수 있습니다.<br />
+                        2. 삼항연산자 (형식 : condition ? expression1 : expression2)<br />
+                        - condition은 평가될 조건식입니다. <br />
+                        - expression1은 조건식이 참일 경우 반환될 표현식입니다. <br />
+                        - expression2는 조건식이 거짓일 경우 반환될 표현식입니다. <br />
+                    </p>
+                    <pre><code class="language-js">{
+        const num = 100;
+        // 1. if문
+        if (num == 100) {
+            document.write("실행되었습니다. (true)");
+        } else {
+            document.write("실행되었습니다. (false)");
+        }
+        
+        // 2. if문 생략
+        if (num == 100) document.write("실행되었습니다. (true)");
+        else document.write("실행되었습니다. (false)");
+        
+        // 3. 삼항연산자
+        (num == 100) ? document.write("true") : document.write("false");
+} </code></pre>
+                    <p class="desc">
+                    </p>
+                    <div class="result">
+                        <details>
+                            <summary>결과 확인하기</summary>
+                            <div>
+                                1. 실행되었습니다. (true)<br />
+                                2. 실행되었습니다. (true)<br />
+                                3. true<br />
+                            </div>
+                        </details>
+                    </div>
+                </div>
+                <div id="sample05" class="sample">
+                    <h3>05. switch문</h3>
+                    <p>여러 경우(case)에 따라 다른 동작을 수행해야 할 때 사용됩니다. <br />
+                        주어진 표현식의 값을 기준으로 여러 개의 case를 비교하고, 일치하는 case가 발견되면 해당 case의 코드 블록을 실행합니다.<br />
+                    </p>
+                    <pre><code class="language-js">{
+        const num = 100;
+
+        switch (num) {
+            case 90:
+                document.write("실행되었습니다.(90)");
+                break;
+            case 100:
+                document.write("실행되었습니다.(100)");
+                break;
+            case 105:
+                document.write("실행되었습니다.(105)");
+                break;
+            case 110:
+                document.write("실행되었습니다.(110)");
+                break;
+            default:
+                document.write("실행되었습니다.");
+        };
+} </code></pre>
+                    <p class="desc">
+                        *default 절 <br>
+                        switch문에는 모든 case와 일치하지 않을 때 실행될 default 절을 포함할 수 있습니다. <br>
+                        이를 통해 예기치 않은 상황에 대한 대비책을 마련할 수 있습니다. <br>
+                    </p>
+                    <div class="result">
+                        <details>
+                            <summary>결과 확인하기</summary>
+                            <div>
+                                실행되었습니다.(110)
+                            </div>
+                        </details>
+                    </div>
+                </div>
+                <div id="sample06" class="sample">
+                    <h3>06. while문</h3>
+                    <p>
+                        while문은 조건이 참인 동안 반복적으로 코드 블록을 실행하는 반복문입니다. <br />
+                        조건이 참이면 코드 블록이 실행되고, 다시 조건을 검사하여 조건이 여전히 참이면 코드 블록이 반복해서 실행됩니다. <br />
+                        이 과정은 조건이 거짓이 될 때까지 계속됩니다. <br />
+                    </p>
+                    <pre><code class="language-js">{
+        let num = 1;
+        while (num <= 10) {
+            document.write(num + "<br>")
+            num++;
+        }
+} </code></pre>
+                    <p class="desc">
+                    </p>
+                    <div class="result">
+                        <details>
+                            <summary>결과 확인하기</summary>
+                            <div>
+                                1<br />
+                                2<br />
+                                3<br />
+                                4<br />
+                                5<br />
+                                6<br />
+                                7<br />
+                                8<br />
+                                9<br />
+                                10
+                            </div>
+                        </details>
+                    </div>
+                </div>
+                <div id="sample08" class="sample">
+                    <h3>08. for문</h3>
+                    <p>
+                        for문은 프로그래밍에서 반복 작업을 수행하는 데에 사용되는 제어 구조 중 하나입니다. <br />
+                        일정한 횟수만큼 반복을 수행하거나, 배열과 같은 데이터 구조의 각 요소에 대해 반복 작업을 수행하는 데에 매우 유용합니다.<br />
+                    </p>
+                    <pre><code class="language-js">{
+        for (let i = 0; i <= 10; i++) {
+            console.log(i)
+        }
+} </code></pre>
+                    <p class="desc">
+                        *for문의 실행순서<br />
+                        1. 초기식 실행<br />
+                        2. 조건식이 평가 (참이면 반복문이 실행되고, 거짓이면 종료)<br />
+                        3. 반복문이 실행<br />
+                        4. 증감식이 실행<br />
+                        5. 다시 조건식 평가됨을 거짓이 될때까지 반복<br />
+                    </p>
+                    <div class="result">
+                        <details>
+                            <summary>결과 확인하기</summary>
+                            <div>
+                                0<br />
+                                1<br />
+                                2<br />
+                                3<br />
+                                4<br />
+                                5<br />
+                                6<br />
+                                7<br />
+                                8<br />
+                                9<br />
+                                10
+                            </div>
+                        </details>
+                    </div>
+                </div>
+                <div id="sample09" class="sample">
+                    <h3>09. break문</h3>
+                    <p>
+                        break문은 반복문이나 switch문에서 실행을 즉시 중지하는 데 사용됩니다.<br />
+                    </p>
+                    <pre><code class="language-js">{
+        for (let i = 1; i <= 10; i++) {
+            if (i == 5) {
+                break;
+            }
+            document.write(i, "<br>");
+        }
+} </code></pre>
+                    <p class="desc">
+                        1. 반복문에서의 break <br />
+                        - 반복문 안에서 break가 실행되면 해당 반복문이 즉시 종료됩니다. <br />
+                        - 이후의 코드 블록은 실행되지 않고 반복문을 빠져나옵니다. <br />
+                        - 주로 반복문 내에서 특정 조건을 만족하면 반복문을 종료할 때 사용됩니다. <br />
+                        2. switch문에서의 break<br />
+                        - break는 switch문에서 각 case 블록의 실행을 중지하고 switch문을 빠져나오는데 사용됩니다.<br />
+                        - break문이 없으면 case 블록이 실행된 이후에도 계속해서 다음 case 블록이 실행됩니다.<br />
+                    </p>
+                    <div class="result">
+                        <details>
+                            <summary>결과 확인하기</summary>
+                            <div>
+                                1<br />
+                                2<br />
+                                3<br />
+                                4<br />
+                            </div>
+                        </details>
+                    </div>
+                </div>
+                <div id="sample10" class="sample">
+                    <h3>10. continue문</h3>
+                    <p>
+                        continue문은 현재 반복을 중지하고 다음 반복으로 넘어가는데 사용됩니다.<br />
+                    </p>
+                    <pre><code class="language-js">{
+        for (let i = 0; i < 10; i++) {
+            if (i == 5) {
+                continue;
+            }
+            document.write(i, "<br>");
+        }
+} </code></pre>
+                    <p class="desc">
+                    </p>
+                    <div class="result">
+                        <details>
+                            <summary>결과 확인하기</summary>
+                            <div>
+                                0<br />
+                                1<br />
+                                2<br />
+                                3<br />
+                                4<br />
+                                5<br />
+                                6<br />
+                                7<br />
+                                8<br />
+                                9<br />
+                            </div>
+                        </details>
+                    </div>
+                </div>
+
+            </div>
 
     </div>
     <!-- //main_sample -->
@@ -64,6 +370,15 @@
     <script>hljs.highlightAll();</script>
     <script>
 
+        // 10. continue문
+        {
+            for (let i = 0; i < 10; i++) {
+                if (i == 5) {
+                    continue;
+                }
+                document.write(i, "<br>");
+            }
+        }
     </script>
 </body>
 

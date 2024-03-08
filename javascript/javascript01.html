@@ -689,6 +689,10 @@
                                 • * : 곱셈 <br />
                                 • / : 나눗셈 <br />
                                 • % : 나머지 <br />
+                                <br />
+                                [증가/감소 연산자]<br />
+                                • ++ : 증가 연산자. 변수의 값을 1씩 증가 <br />
+                                • -- : 감소 연산자. 변수의 값을 1씩 감소 <br />
                             </p>
                             <pre><code class="language-js">{
         let a = 10;
@@ -699,6 +703,19 @@
         console.log(a * b); //결과: 50
         console.log(a / b); //결과: 2
         console.log(a % b); //결과: 0
+        
+        [증가/감소 연산자] ============================
+
+        let x = 5;
+        console.log(++x); // 출력: 6 (x가 증가된 후에 출력)
+        console.log(x++); // 출력: 6 (x가 출력된 후에 증가)
+        console.log(x);   // 출력: 7 (x의 값은 이전에 증가되어 6에서 7로 변함)
+
+        let y = 10;
+
+        console.log(--y); // 출력: 9 (y가 감소된 후에 출력)
+        console.log(y--); // 출력: 9 (y가 출력된 후에 감소)
+        console.log(y);   // 출력: 8 (y의 값은 이전에 감소되어 9에서 8로 변함)
 }</code></pre>
 
                         </div>
@@ -775,6 +792,21 @@
         console.log(a < b); // false (숫자와 문자열 비교 시, 문자열을 숫자로 변환하여 비교하므로)
         console.log(a >= b); // true (숫자와 문자열 비교 시, 문자열을 숫자로 변환하여 비교하므로)
         console.log(a <= b); // true (숫자와 문자열 비교 시, 문자열을 숫자로 변환하여 비교하므로)
+}</code></pre>
+                        </div>
+                    </details>
+                    <details class="operator 05">
+                        <summary>5. 삼항 연산자(Ternary Operator)</summary>
+                        <div>
+                            <p>- 조건식을 평가하고 그 결과에 따라 두 가지 표현식 중 하나를 반환합니다. <br />
+                                [형식: condition ? expression1 : expression]<br />
+                                - condition : 평가할 조건식<br />
+                                - expression1, expression2 : 조건식이 참(true)일 때와 거짓(false)일 때 각각 반환될 표현식<br />
+                            </p>
+                            <pre><code class="language-js">{
+        let num = 10;
+        let result = (num % 2 === 0) ? "짝수" : "홀수";
+        console.log(result); // 출력: "짝수" (10은 짝수이므로)
 }</code></pre>
                         </div>
                     </details>
