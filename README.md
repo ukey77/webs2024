@@ -1,6 +1,5 @@
 ## 오늘의 클래스
-- layout B/C 유형
-- 자바스크립트 데이터저장하기 18번 
+- layout C 유형
 
 ## Javascript Study
 [JS 데이터저장하기 03](https://ukey77.github.io/webs2024/javascript/javascript01.html)
