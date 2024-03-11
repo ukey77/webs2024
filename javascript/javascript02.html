@@ -64,8 +64,8 @@
 
                     </p>
                     <pre><code class="language-js">{
-        let x = 100, y = 200, z = "javascript"; //이어쓰기 가능
-        console.log(x, y, z); // 100 200 'javascript'  
+        let x = 100, y = 200, z = "javascript"; // *이어쓰기 가능
+        console.log(x, y, z);
 } </code></pre>
                     <p class="desc">
                         *이어쓰기(Chaining)<br />
@@ -178,8 +178,8 @@
             console.log(i);
             for (let n = 1; n <= 9; n++) {
                 console.log(i + ' * ' + n + ' = ' + (i * n));
-            };
-        };
+            }; // 내부 루프
+        }; // 바깥쪽 루프
 } </code></pre>
                     <p class="desc">
                         바깥쪽 for 루프 : 1부터 3까지를 반복<br />
