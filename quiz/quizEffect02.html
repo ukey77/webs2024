@@ -26,14 +26,284 @@
     </header>
     <!-- //header -->
     <main id="main">
-
+        <div class="quiz__wrap">
+            <div class="quiz">
+                <div class="quiz__header">
+                    <span class="date"></span>
+                    <span class="type"></span>
+                </div>
+                <div class="quiz__main">
+                    <div class="quiz__question">
+                        <em></em>.
+                        <span></span>
+                    </div>
+                    <div class="quiz__input">
+                        <input type="text" placeholder="정답을 입력해주세요!">
+                    </div>
+                    <div class="quiz__answer"></div>
+                    <div class="quiz__desc"></div>
+                </div>
+                <div class="quiz__footer">
+                    <button class="quiz__confirm">정답 확인하기</button>
+                </div>
+            </div>
+            <div class="quiz">
+                <div class="quiz__header">
+                    <span class="date"></span>
+                    <span class="type"></span>
+                </div>
+                <div class="quiz__main">
+                    <div class="quiz__question">
+                        <em></em>.
+                        <span></span>
+                    </div>
+                    <div class="quiz__input">
+                        <input type="text" placeholder="정답을 입력해주세요!">
+                    </div>
+                    <div class="quiz__answer "></div>
+                    <div class="quiz__desc "></div>
+                </div>
+                <div class="quiz__footer">
+                    <button class="quiz__confirm">정답 확인하기</button>
+                </div>
+            </div>
+            <div class="quiz">
+                <div class="quiz__header">
+                    <span class="date"></span>
+                    <span class="type"></span>
+                </div>
+                <div class="quiz__main">
+                    <div class="quiz__question">
+                        <em></em>.
+                        <span></span>
+                    </div>
+                    <div class="quiz__input">
+                        <input type="text" placeholder="정답을 입력해주세요!">
+                    </div>
+                    <div class="quiz__answer "></div>
+                    <div class="quiz__desc "></div>
+                </div>
+                <div class="quiz__footer">
+                    <button class="quiz__confirm">정답 확인하기</button>
+                </div>
+            </div>
+            <div class="quiz">
+                <div class="quiz__header">
+                    <span class="date"></span>
+                    <span class="type"></span>
+                </div>
+                <div class="quiz__main">
+                    <div class="quiz__question">
+                        <em></em>.
+                        <span></span>
+                    </div>
+                    <div class="quiz__input">
+                        <input type="text" placeholder="정답을 입력해주세요!">
+                    </div>
+                    <div class="quiz__answer "></div>
+                    <div class="quiz__desc "></div>
+                </div>
+                <div class="quiz__footer">
+                    <button class="quiz__confirm">정답 확인하기</button>
+                </div>
+            </div>
+            <div class="quiz">
+                <div class="quiz__header">
+                    <span class="date"></span>
+                    <span class="type"></span>
+                </div>
+                <div class="quiz__main">
+                    <div class="quiz__question">
+                        <em></em>.
+                        <span></span>
+                    </div>
+                    <div class="quiz__input">
+                        <input type="text" placeholder="정답을 입력해주세요!">
+                    </div>
+                    <div class="quiz__answer "></div>
+                    <div class="quiz__desc "></div>
+                </div>
+                <div class="quiz__footer">
+                    <button class="quiz__confirm">정답 확인하기</button>
+                </div>
+            </div>
+            <div class="quiz">
+                <div class="quiz__header">
+                    <span class="date"></span>
+                    <span class="type"></span>
+                </div>
+                <div class="quiz__main">
+                    <div class="quiz__question">
+                        <em></em>.
+                        <span></span>
+                    </div>
+                    <div class="quiz__input">
+                        <input type="text" placeholder="정답을 입력해주세요!">
+                    </div>
+                    <div class="quiz__answer "></div>
+                    <div class="quiz__desc "></div>
+                </div>
+                <div class="quiz__footer">
+                    <button class="quiz__confirm">정답 확인하기</button>
+                </div>
+            </div>
+            <!-- quiz -->
+        </div>
     </main>
     <!-- //main -->
     <footer id="footer">
-
+        <a href="mailto:yujin2568@naver.com">mailto : yujin2568@naver.com</a>
     </footer>
     <!-- //footer -->
 
+    <script>
+        // 선택자
+        const quizWrap = document.querySelector(".quiz__wrap");
+        const quizDate = quizWrap.querySelectorAll(".quiz__header .date");
+        const quizType = quizWrap.querySelectorAll(".quiz__header .type");
+        const quizNum = quizWrap.querySelectorAll(".quiz__question em");
+        const quizQuestion = quizWrap.querySelectorAll(".quiz__question span");
+        const quizAnswer = quizWrap.querySelectorAll(".quiz__main .quiz__answer");
+        const quizDesc = quizWrap.querySelectorAll(".quiz__main .quiz__desc");
+        const quizConfirm = quizWrap.querySelectorAll(".quiz__confirm");
+        const quizInput = quizWrap.querySelectorAll(".quiz__input input");
+
+        // 문제정보
+        const quizInfo = [
+            {
+                infoDate: "2011년 1회",
+                infoType: "정보처리기능사",
+                infoNum: "01",
+                infoQuestion: "주파수분할 다중화 방식에서 각 채널간 간섭을 막기 위해서 일종의 완충지역 역할을 하는 것을 무엇이라고 하는가?",
+                infoAnswer: "가드밴드",
+                infoDesc: "가드밴드(Guard Band)는 주파수분할 다중화 방식에서 각 채널간 간섭을 막기 위해서 일종의 완충지역 역할을 한다."
+            },
+            {
+                infoDate: "2011년 2회",
+                infoType: "정보처리기능사",
+                infoNum: "02",
+                infoQuestion: "사용자의 명령으로 시스템이 수행되고 그에 따른 결과를 나타내 주는 대화식 운영체제는 무엇인가?",
+                infoAnswer: "UNIX",
+                infoDesc: "UNIX는 사용자의 명령으로 시스템이 수행되고 그에 따른 결과를 나타내 주는 대화식 운영체제이다."
+            },
+            {
+                infoDate: "2011년 3회",
+                infoType: "정보처리기능사",
+                infoNum: "03",
+                infoQuestion: "프로세스들이 서로 다른 프로세스가 차지하고 있는 자원을 무한정 기다려 시스템이 멈춘 것처럼 보이는 상태를 무엇이라고 하는가?",
+                infoAnswer: "교착상태",
+                infoDesc: "교착상태(Deadlock)는 2개 이상의 프로세스들이 서로 다른 프로세스가 차지하고 있는 자원을 무한정 기다려 시스템이 멈춘 것처럼 보이는 상태이다."
+            },
+            {
+                infoDate: "2011년 4회",
+                infoType: "정보처리기능사",
+                infoNum: "04",
+                infoQuestion: "패스워드로 사용될 수 있는 영문자(대소문자), 숫자, 특수문자 등을 무작위로 대입하여 패스워드를 알아내는 기법은 무엇인가?",
+                infoAnswer: "무차별 대입 공격",
+                infoDesc: "패스워드 크래킹 유형은 사전 대입 공격, 무차별 대입 공격, 패스워드 하이브리드 공격, 레인보우 테이블 공격이 있다."
+            },
+            {
+                infoDate: "2012년 1회",
+                infoType: "정보처리기능사",
+                infoNum: "05",
+                infoQuestion: "일의 순서를 계획적으로 정리하기 위한 수렴 기법으로 비관치, 중간치, 낙관치의 3점 추정방식을 통해 일정을 관리하는 기법은 무엇인가?",
+                infoAnswer: "PERT",
+                infoDesc: "일정관리 모델의 종류에는 주공정법(CPM), PERT, 중요 연쇄 프로젝트 관리(CCPM)이 있다."
+            },
+            {
+                infoDate: "2012년 3회",
+                infoType: "정보처리기능사",
+                infoNum: "06",
+                infoQuestion: "테이블에서 각 튜플을 구별하는 데 기준이 되는 컬럼으로 기본키와 대체키를 합친 키는 무엇인가?",
+                infoAnswer: "후보키",
+                infoDesc: "키의 종류에는 기본키, 대체키, 후보키, 슈퍼키, 외래키가 있다."
+            }
+        ];
+
+        // // 문제출력
+        // // Date
+        // quizDate[0].textContent = quizInfo[0].infoDate;
+        // quizDate[1].textContent = quizInfo[1].infoDate;
+        // quizDate[2].textContent = quizInfo[2].infoDate;
+        // quizDate[3].textContent = quizInfo[3].infoDate;
+        // quizDate[4].textContent = quizInfo[4].infoDate;
+        // quizDate[5].textContent = quizInfo[5].infoDate;
+
+        // // Type
+        // quizType[0].textContent = quizInfo[0].infoType;
+        // quizType[1].textContent = quizInfo[1].infoType;
+        // quizType[2].textContent = quizInfo[2].infoType;
+        // quizType[3].textContent = quizInfo[3].infoType;
+        // quizType[4].textContent = quizInfo[4].infoType;
+        // quizType[5].textContent = quizInfo[5].infoType;
+
+        // // Num
+        // quizNum[0].textContent = quizInfo[0].infoNum;
+        // quizNum[1].textContent = quizInfo[1].infoNum;
+        // quizNum[2].textContent = quizInfo[2].infoNum;
+        // quizNum[3].textContent = quizInfo[3].infoNum;
+        // quizNum[4].textContent = quizInfo[4].infoNum;
+        // quizNum[5].textContent = quizInfo[5].infoNum;
+
+        // // Question
+        // quizQuestion[0].textContent = quizInfo[0].infoQuestion;
+        // quizQuestion[1].textContent = quizInfo[1].infoQuestion;
+        // quizQuestion[2].textContent = quizInfo[2].infoQuestion;
+        // quizQuestion[3].textContent = quizInfo[3].infoQuestion;
+        // quizQuestion[4].textContent = quizInfo[4].infoQuestion;
+        // quizQuestion[5].textContent = quizInfo[5].infoQuestion;
+
+        // // Answer
+        // quizAnswer[0].textContent = quizInfo[0].infoAnswer;
+        // quizAnswer[1].textContent = quizInfo[1].infoAnswer;
+        // quizAnswer[2].textContent = quizInfo[2].infoAnswer;
+        // quizAnswer[3].textContent = quizInfo[3].infoAnswer;
+        // quizAnswer[4].textContent = quizInfo[4].infoAnswer;
+        // quizAnswer[5].textContent = quizInfo[5].infoAnswer;
+
+        // // Desc
+        // quizDesc[0].textContent = quizInfo[0].infoDesc;
+        // quizDesc[1].textContent = quizInfo[1].infoDesc;
+        // quizDesc[2].textContent = quizInfo[2].infoDesc;
+        // quizDesc[3].textContent = quizInfo[3].infoDesc;
+        // quizDesc[4].textContent = quizInfo[4].infoDesc;
+        // quizDesc[5].textContent = quizInfo[5].infoDesc;
+
+        // for (let i = 0; i < quizInfo.length; i++) {
+        //     quizDate[i].textContent = quizInfo[i].infoDate;
+        //     quizType[i].textContent = quizInfo[i].infoType;
+        //     quizNum[i].textContent = quizInfo[i].infoNum;
+        //     quizQuestion[i].textContent = quizInfo[i].infoQuestion;
+        //     quizAnswer[i].textContent = quizInfo[i].infoAnswer;
+        //     quizDesc[i].textContent = quizInfo[i].infoDesc;
+        // };
+
+
+        // forEach
+        quizInfo.forEach(function (element, idx) {
+            quizDate[idx].textContent = quizInfo[idx].infoDate;
+            quizType[idx].textContent = quizInfo[idx].infoType;
+            quizNum[idx].textContent = quizInfo[idx].infoNum;
+            quizQuestion[idx].textContent = quizInfo[idx].infoQuestion;
+            quizAnswer[idx].textContent = quizInfo[idx].infoAnswer;
+            quizDesc[idx].textContent = quizInfo[idx].infoDesc;
+        });
+
+
+        // 복습
+        {
+            const num = [100, 200, 300, 400, 500];
+
+            num.forEach(function (i, i2, i3) {
+                console.log(i) // 첫번쨰는 값
+                console.log(i2) // 두번째는 인덱스
+                console.log(i3) // 세번째는 전체 배열
+            });
+        }
+
+
+    </script>
 </body>
+
 
 </html>

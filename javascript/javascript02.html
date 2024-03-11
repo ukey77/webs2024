@@ -33,11 +33,308 @@
         <main id="main">
             <div class="main__menu">
                 <ul>
-
+                    <li><a href="#">01. 변수 : 데이터 불러오기</a></li>
+                    <li><a href="#">02. 상수 : 데이터 불러오기</a></li>
+                    <li><a href="#">03. 배열 : 데이터 불러오기</a></li>
+                    <li><a href="#">04. 배열 : 데이터 불러오기 : for()</a></li>
+                    <li><a href="#">05. 배열 : 데이터 불러오기 : 중첩 for()</a></li>
+                    <li><a href="#">06. 배열 : 데이터 불러오기 : forEach()</a></li>
+                    <li><a href="#">07. 배열 : 데이터 불러오기 : for of</a></li>
+                    <li><a href="#">08. 배열 : 데이터 불러오기 : for in</a></li>
+                    <li><a href="#">09. 배열 : 데이터 불러오기 : map()</a></li>
+                    <li><a href="#">10. 배열 : 데이터 불러오기 : filter()</a></li>
+                    <li><a href="#">11. 배열 : 데이터 불러오기 : 배열 펼침 연산자</a></li>
+                    <li><a href="#">12. 배열 : 데이터 불러오기 : 배열 구조 분해 할당</a></li>
+                    <li><a href="#">13. 객체 : 데이터 불러오기</a></li>
+                    <li><a href="#">14. 객체 : 데이터 불러오기 : Object.keys()</a></li>
+                    <li><a href="#">15. 객체 : 데이터 불러오기 : Object.values()</a></li>
+                    <li><a href="#">16. 객체 : 데이터 불러오기 : Object.entries()</a></li>
+                    <li><a href="#">17. 객체 : 데이터 불러오기 : Object.assign()</a></li>
+                    <li><a href="#">18. 객체 : 데이터 불러오기 : hasOwnProperty()</a></li>
+                    <li><a href="#">19. 객체 : 데이터 불러오기 : for in()</a></li>
+                    <li><a href="#">20. 객체 : 데이터 불러오기 : 배열 펼침 연산자</a></li>
+                    <li><a href="#">21. 객체 : 데이터 불러오기 : 배열 구조 분해 할당</a></li>
                 </ul>
             </div>
             <!--//main__menu -->
+            <div class="main_sample">
+                <div id="sample01" class="sample">
+                    <h3>01. 변수 : 데이터 불러오기</h3>
+                    <p>
 
+                    </p>
+                    <pre><code class="language-js">{
+        let x = 100, y = 200, z = "javascript"; //이어쓰기 가능
+        console.log(x, y, z); // 100 200 'javascript'  
+} </code></pre>
+                    <p class="desc">
+                        *이어쓰기(Chaining)<br />
+                        - 여러 변수를 한 줄에 선언하고 초기화할 때 쉼표(,)로 변수를 구분합니다.
+                    </p>
+                    <div class="result">
+                        <details>
+                            <summary>결과 확인하기</summary>
+                            <div>
+                                100<br />
+                                200 <br />
+                                javascript <br />
+
+                            </div>
+                        </details>
+                    </div>
+                </div>
+                <div id="sample02" class="sample">
+                    <h3>02. 상수 : 데이터 불러오기</h3>
+                    <p>
+                    </p>
+                    <pre><code class="language-js">{
+        const x = 100, y = 200, z = "javascript";
+        console.log(x, y, z);
+} </code></pre>
+                    <p class="desc">
+
+                    </p>
+                    <div class="result">
+                        <details>
+                            <summary>결과 확인하기</summary>
+                            <div>
+                                100<br />
+                                200 <br />
+                                javascript <br />
+                            </div>
+                        </details>
+                    </div>
+                </div>
+                <div id="sample03" class="sample">
+                    <h3>03. 배열 : 데이터 불러오기</h3>
+                    <p>
+
+                    </p>
+                    <pre><code class="language-js">{
+        const arr = [100, 200, "javascript"];
+        console.log(arr[0], arr[1], arr[2]);
+} </code></pre>
+                    <p class="desc">
+
+                    </p>
+                    <div class="result">
+                        <details>
+                            <summary>결과 확인하기</summary>
+                            <div>
+                                100 200 'javascript'
+
+                            </div>
+                        </details>
+                    </div>
+                </div>
+                <div id="sample04" class="sample">
+                    <h3>05. 배열 : 데이터 불러오기 : for()</h3>
+                    <p>
+                        - for문은 일반적인 반복 작업에 사용됩니다.<br />
+                        - 초기화 구문, 조건식, 반복 후 실행되는 구문이 모두 명시적으로 제어됩니다.<br />
+                        - 보통 반복 횟수가 명확할 때 사용됩니다.<br />
+                    </p>
+                    <pre><code class="language-js">{
+        const arr = [100, 200, 300, 400, 500, 600, 700, 800, 900];
+
+        for (let i = 0; i < arr.length; i++) {
+            console.log(arr[i]);
+        };
+} </code></pre>
+                    <p class="desc">
+                        *사용 상황<br />
+                        for : 반복 횟수가 명확하고 특정 범위 내에서 반복하는 경우 사용<br />
+                        forEach : 배열 또는 컬렉션을 순회하면서 요소를 접근해야 할 때는<br />
+                    </p>
+                    <div class="result">
+                        <details>
+                            <summary>결과 확인하기</summary>
+                            <div>
+                                100<br />
+                                200<br />
+                                300<br />
+                                400<br />
+                                500<br />
+                                600<br />
+                                700<br />
+                                800<br />
+                                900<br />
+                            </div>
+                        </details>
+                    </div>
+                </div>
+                <div id="sample05" class="sample">
+                    <h3>05. 배열 : 데이터 불러오기 : 중첩 for()</h3>
+                    <p>
+                        - for문은 일반적인 반복 작업에 사용됩니다.<br />
+                        - 초기화 구문, 조건식, 반복 후 실행되는 구문이 모두 명시적으로 제어됩니다.<br />
+                        - 보통 반복 횟수가 명확할 때 사용됩니다.<br />
+                    </p>
+                    <pre><code class="language-js">{
+        const arr = [100, 200, 300, 400, 500, 600, 700, 800, 900];
+
+        for (let i = 0; i < arr.length; i++) {
+            console.log(arr[i]);
+        };
+} </code></pre>
+                    <p class="desc">
+                        *사용 상황<br />
+                        for : 반복 횟수가 명확하고 특정 범위 내에서 반복하는 경우 사용<br />
+                        forEach : 배열 또는 컬렉션을 순회하면서 요소를 접근해야 할 때는<br />
+                    </p>
+                    <div class="result">
+                        <details>
+                            <summary>결과 확인하기</summary>
+                            <div>
+                                100<br />
+                                200<br />
+                                300<br />
+                                400<br />
+                                500<br />
+                                600<br />
+                                700<br />
+                                800<br />
+                                900<br />
+                            </div>
+                        </details>
+                    </div>
+                </div>
+                <div id="sample06" class="sample">
+                    <h3>06. 배열 : 데이터 불러오기 : forEach()</h3>
+                    <p>
+                        - foreach문은 배열 또는 컬렉션 같은 데이터 구조를 순회할 때 사용됩니다.<br />
+                        - 컬렉션의 요소들을 하나씩 가져와서 처리할 때 편리합니다.<br />
+                    </p>
+                    <p class="desc">
+                    <pre><code class="language-js">
+        /* forEach() 형식 */<br />
+        array.forEach(function(element, index, array) {
+            (각 요소에 대해 수행할 작업)
+        });
+
+        // ex.
+        const num = [100, 200, 300, 400, 500];
+        num.forEach(function (element, index, array) {
+            console.log(element) // 첫번째인자 : 값
+            console.log(index) // 두번째인자 : 인덱스
+            console.log(i3) // 세번째인자 : 전체 배열
+        });
+                    </code></pre>
+                    *각 매개변수의 역할 (element, index, array)<br />
+                    1. element : 현재 처리 중인 배열 요소의 값<br />
+                    2. index : 현재 처리 중인 배열 요소의 인덱스<br />
+                    3. array : forEach()를 호출한 배열 자체<br />
+                    </p>
+                    <pre><code class="language-js">{
+        const arr = [100, 200, 300, 400, 500, 600, 700, 800, 900];
+
+        arr.forEach(function (element) {
+            console.log(element);
+        });
+} </code></pre>
+                    <div class="result">
+                        <details>
+                            <summary>결과 확인하기</summary>
+                            <div>
+                                100<br />
+                                200<br />
+                                300<br />
+                                400<br />
+                                500<br />
+                                600<br />
+                                700<br />
+                                800<br />
+                                900<br />
+                            </div>
+                        </details>
+                    </div>
+
+                </div>
+                <!-- <div id="sample07" class="sample">
+                    <h3>07. 배열 : 데이터 불러오기 : for of</h3>
+                    <p>
+
+                    </p>
+                    <pre><code class="language-js">{
+
+} </code></pre>
+                    <p class="desc">
+
+                    </p>
+                    <div class="result">
+                        <details>
+                            <summary>결과 확인하기</summary>
+                            <div>
+
+
+                            </div>
+                        </details>
+                    </div>
+                </div>
+                <div id="sample08" class="sample">
+                    <h3>08. 배열 : 데이터 불러오기 : for in</h3>
+                    <p>
+
+                    </p>
+                    <pre><code class="language-js">{
+
+} </code></pre>
+                    <p class="desc">
+
+                    </p>
+                    <div class="result">
+                        <details>
+                            <summary>결과 확인하기</summary>
+                            <div>
+
+
+                            </div>
+                        </details>
+                    </div>
+                </div>
+                <div id="sample09" class="sample">
+                    <h3>09. 배열 : 데이터 불러오기 : map()</h3>
+                    <p>
+
+                    </p>
+                    <pre><code class="language-js">{
+
+} </code></pre>
+                    <p class="desc">
+
+                    </p>
+                    <div class="result">
+                        <details>
+                            <summary>결과 확인하기</summary>
+                            <div>
+
+
+                            </div>
+                        </details>
+                    </div>
+                </div>
+                <div id="sample10" class="sample">
+                    <h3>10. 배열 : 데이터 불러오기 : filter()</h3>
+                    <p>
+
+                    </p>
+                    <pre><code class="language-js">{
+
+} </code></pre>
+                    <p class="desc">
+
+                    </p>
+                    <div class="result">
+                        <details>
+                            <summary>결과 확인하기</summary>
+                            <div>
+
+
+                            </div>
+                        </details>
+                    </div>
+                </div> -->
+            </div>
 
     </div>
     <!-- //main_sample -->
@@ -55,6 +352,31 @@
     <script>hljs.highlightAll();</script>
     <script>
 
+        // 05. 배열 : 데이터 불러오기 : for()
+        {
+            for (let i = 1; i <= 10; i++) {
+                console.log(i);
+            }
+        }
+        // 07. 배열 : 데이터 불러오기 : for of
+        {
+
+        }
+
+        // 08. 배열 : 데이터 불러오기 : for in
+        {
+
+        }
+
+        // 09. 배열 : 데이터 불러오기 : map()
+        {
+
+        }
+
+        // 10. 배열 : 데이터 불러오기 : filter()
+        {
+
+        }
     </script>
 </body>
 
