@@ -1,5 +1,5 @@
 ## 오늘의 클래스
-- 2. Javascript 데이터불러오기
+- Javascript 데이터불러오기
 - 퀴즈게임02
 
 ## Javascript Study
