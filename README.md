@@ -1,11 +1,6 @@
-## 오늘의 클래스
-- Javascript 데이터불러오기
-- 퀴즈게임02
-
 ## Javascript Study
-[1. JS 데이터저장하기](https://ukey77.github.io/webs2024/javascript/javascript01.html)   
-[2. JS 데이터불러오기](https://ukey77.github.io/webs2024/javascript/javascript02.html)     
-[4. JS 데이터제어하기](https://ukey77.github.io/webs2024/javascript/javascript04.html)
+[JS 데이터저장하기](https://ukey77.github.io/webs2024/javascript/javascript01.html)   
+[JS 데이터불러오기](https://ukey77.github.io/webs2024/javascript/javascript02.html)     
 
 ## QuizEffect
 [퀴즈게임01](https://ukey77.github.io/webs2024/quiz/quizEffect01.html)
